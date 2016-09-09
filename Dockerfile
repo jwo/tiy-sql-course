@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get -y install sqlite3 libsqlite3-dev
 RUN mkdir /app
 WORKDIR /app
-ADD timeentries.sqlite3 /app/timeentries.sqlite3 
+ADD store.sqlite3 /app/store.sqlite3 
 
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8 
